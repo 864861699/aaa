@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sixi.domain.dao.cwpg.IprivilegeUser">
+
+    <select id="gitList" resultType="java.util.Map">
+        select id,userid,privilege_name from privilege_user
+    </select>
+
+    <select id="info" resultType="java.util.Map">
+        select userid,privilege_name from privilege_user where id=#{id}
+    </select>
+
+    <insert id="add">
+        INSERT INTO privilege_user(userid,privilege_name) VALUES (#{userid},#{privilegeName})
+    </insert>
+
+    <update id="edit">
+        UPDATE privilege_user SET userid=#{userid},privilege_name=#{privilegeName} where id = #{id}
+    </update>
+
+    <delete id="del">
+        DELETE FROM privilege_user WHERE id=#{id}
+    </delete>
+</mapper>

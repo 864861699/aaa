@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sixi.domain.dao.cwpg.IGenerateReport">
+
+
+    <insert id="insertReportDir" parameterType="com.sixi.domain.cwmodel.ReportDir" useGeneratedKeys="true" >
+        <selectKey keyProperty="id" resultType="java.lang.Integer">
+            select currval('reportdir_id_seq')
+        </selectKey>
+        INSERT INTO report_dir(
+        addtime
+        ,timerange
+        ,salary_yearmonth
+        )
+        VALUES (
+        now()
+        ,#{timerange}
+        ,#{salary_yearmonth}
+        )
+    </insert>
+
+
+    <insert id="insertReportDeteils" parameterType="com.sixi.domain.cwmodel.ReportDetails">
+        INSERT INTO report_details(
+        custom_name
+        ,class2
+        ,class2name
+        ,class1
+        ,class1name
+        ,userid
+        ,username
+        ,customid
+        ,contract_type
+        ,contract_typename
+        ,money
+        ,tidian
+        ,xkzfz_uid
+        ,xkzfz_name
+        ,zakf_uid
+        ,zakf_name
+        ,invoiceid
+        ,contract_num
+        ,payment_date
+        ,contract_start
+        ,contract_end
+        ,remark
+        ,dirid
+        ,invoice_state
+        )
+        VALUES (
+        #{custom_name}
+        ,#{class2}
+        ,#{class2name}
+        ,#{class1}
+        ,#{class1name}
+        ,#{userid}
+        ,#{username}
+        ,#{customid}
+        ,#{contract_type}
+        ,#{contract_typename}
+        ,#{money}
+        ,#{tidian}
+        ,#{xkzfz_uid}
+        ,#{xkzfz_name}
+        ,#{zakf_uid}
+        ,#{zakf_name}
+        ,#{invoiceid}
+        ,#{contract_num}
+        ,#{payment_date}
+        ,#{contract_start}
+        ,#{contract_end}
+        ,#{remark}
+        ,#{dirid}
+        ,#{invoice_state}
+        )
+    </insert>
+
+    <select id="contractNumList" resultType="java.lang.String">
+        select contract_num from report_details
+    </select>
+
+    <select id="getDirList" resultType="java.util.Map">
+        select id
+        ,addtime
+        ,timerange
+        ,salary_yearmonth
+        ,fincheck
+        ,fincheck_time
+        ,type
+        from report_dir
+        order by salary_yearmonth desc
+    </select>
+
+    <select id="getDirListInfo" resultType="java.util.Map">
+        select id
+        ,addtime
+        ,timerange
+        ,salary_yearmonth
+        ,fincheck
+        ,fincheck_time
+        ,type
+        from report_dir
+        where id=#{id}
+    </select>
+
+    <select id="getDetailsList" resultType="java.util.Map">
+        select
+            id,
+            custom_name ,
+            class2 ,
+            class2name,
+            class1,
+            class1name,
+            userid,
+            username,
+            customid,
+            contract_type,
+            contract_typename,
+            money,
+            tidian,
+            xkzfz_uid,
+            xkzfz_name,
+            zakf_uid,
+            zakf_name,
+            invoice_state,
+            contract_num,
+            payment_date,
+            contract_start,
+            contract_end,
+            remark,
+            dirid
+        from report_details
+        where 1=1
+        and dirid=#{dirid}
+
+
+    </select>
+
+    <select id="getDetailsInfo" resultType="java.util.Map">
+        select
+        id,
+        custom_name ,
+        class2 ,
+        class2name,
+        class1,
+        class1name,
+        userid,
+        username,
+        customid,
+        contract_type,
+        contract_typename,
+        money,
+        tidian,
+        xkzfz_uid,
+        xkzfz_name,
+        zakf_uid,
+        zakf_name,
+        invoice_state,
+        contract_num,
+        payment_date,
+        contract_start,
+        contract_end,
+        remark,
+        dirid
+        from report_details
+        where id=#{id}
+
+    </select>
+
+    <delete id="detailsdel">
+        delete from report_details where id=#{id}
+    </delete>
+
+    <update id="detailsEdit" parameterType="com.sixi.domain.dto.historyreport.datailsSaveParam">
+        UPDATE report_details
+        SET
+        custom_name=#{custom_name}
+        , class2=#{class2}
+        , class2name=#{class2name}
+        , class1=#{class1}
+        , class1name=#{class1name}
+        , userid=#{userid}
+        , username=#{username}
+        , contract_type=#{contract_type}
+        , contract_typename=#{contract_typename}
+        , money=#{money}
+        , tidian=#{tidian}
+        , xkzfz_uid=#{xkzfz_uid}
+        , xkzfz_name=#{xkzfz_name}
+        , zakf_uid=#{zakf_uid}
+        , zakf_name=#{zakf_name}
+        , payment_date=#{payment_date}
+        , contract_start=#{contract_start}
+        , contract_end=#{contract_end}
+        , remark=#{remark}
+        , invoice_state=#{invoice_state}
+        WHERE id=#{id};
+    </update>
+</mapper>

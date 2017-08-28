@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sixi.domain.dao.cwpg.IprivilegeJoint">
+
+    <insert id="add" parameterType="com.sixi.domain.cwmodel.PrivilegeJoint">
+        insert into privilege_joint(class1id,class2id,privilege_name,post) values (#{class1id},#{class2id},#{privilege_name},#{post})
+    </insert>
+
+    <update id="edit" parameterType="com.sixi.domain.cwmodel.PrivilegeJoint">
+        UPDATE privilege_joint
+        set class1id=#{class1id}
+        ,class2id=#{class2id}
+        ,privilege_name=#{privilege_name}
+        ,post=#{post}
+         where id=#{id}
+    </update>
+
+    <select id="getList" resultType="com.sixi.domain.cwmodel.PrivilegeJoint">
+        select id,class1id,class2id,privilege_name,post from privilege_joint
+    </select>
+
+    <delete id="del">
+        DELETE FROM privilege_joint WHERE id=#{id}
+    </delete>
+
+    <select id="info" resultType="com.sixi.domain.cwmodel.PrivilegeJoint">
+        select class1id,class2id,privilege_name,post from privilege_joint where id = #{id}
+    </select>
+
+</mapper>

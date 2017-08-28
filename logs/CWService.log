@@ -1,0 +1,82 @@
+2017/08/28-15:08:42 [main] INFO  com.sixi.App - Starting App on SDWM--20170718J with PID 10716 (E:\javakongjian\CWService\target\classes started by aixiang in E:\javakongjian\CWService)
+2017/08/28-15:08:42 [main] INFO  com.sixi.App - The following profiles are active: dev
+2017/08/28-15:08:42 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55182842: startup date [Mon Aug 28 15:08:42 CST 2017]; root of context hierarchy
+2017/08/28-15:08:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017/08/28-15:08:44 [main] WARN  o.s.c.a.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'DBInit_CWPG' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017/08/28-15:08:44 [main] WARN  o.s.c.a.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'DBInit_OASQLServer' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017/08/28-15:08:45 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8086 (http)
+2017/08/28-15:08:45 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2017/08/28-15:08:45 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017/08/28-15:08:45 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017/08/28-15:08:45 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3114 ms
+2017/08/28-15:08:46 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017/08/28-15:08:46 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017/08/28-15:08:46 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017/08/28-15:08:46 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017/08/28-15:08:46 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017/08/28-15:08:46 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017/08/28-15:08:46 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017/08/28-15:08:47 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17d32e9b, org.springframework.security.web.context.SecurityContextPersistenceFilter@14b7786, org.springframework.security.web.header.HeaderWriterFilter@e042c99, org.springframework.security.web.csrf.CsrfFilter@3727f0ee, org.springframework.security.web.authentication.logout.LogoutFilter@78010562, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5cbe2654, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@468dda3e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63b3ee82, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14b0e127, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66f0548d, org.springframework.security.web.session.SessionManagementFilter@42b6d0cc, org.springframework.security.web.access.ExceptionTranslationFilter@684b31de, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@71945bc0]
+2017/08/28-15:08:48 [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55182842: startup date [Mon Aug 28 15:08:42 CST 2017]; root of context hierarchy] and template loader path [WEB-INF/views/]
+2017/08/28-15:08:48 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017/08/28-15:08:48 [main] INFO  com.sixi.config.MvcConfig - MvcConfig.configureMessageConverters
+2017/08/28-15:08:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55182842: startup date [Mon Aug 28 15:08:42 CST 2017]; root of context hierarchy
+2017/08/28-15:08:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/historyreport/historyreport/generate]}" onto public com.sixi.utils.RD com.sixi.api.historyreport.HistoryReportCtrl.generateData(java.lang.String,java.lang.String)
+2017/08/28-15:08:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/historyreport/historyreport/dir]}" onto public com.sixi.utils.RD com.sixi.api.historyreport.HistoryReportCtrl.getDirList()
+2017/08/28-15:08:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/historyreport/historyreport/details]}" onto public com.sixi.utils.RD com.sixi.api.historyreport.HistoryReportCtrl.getDetailsList()
+2017/08/28-15:08:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/historyreport/historyreport/Info]}" onto public com.sixi.utils.RD com.sixi.api.historyreport.HistoryReportCtrl.getDetailsInfo()
+2017/08/28-15:08:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/historyreport/historyreport/del]}" onto public com.sixi.utils.RD com.sixi.api.historyreport.HistoryReportCtrl.detailsdel()
+2017/08/28-15:08:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/historyreport/historyreport/edit]}" onto public com.sixi.utils.RD com.sixi.api.historyreport.HistoryReportCtrl.detailsedit()
+2017/08/28-15:08:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/historyreport/historyreport/add]}" onto public com.sixi.utils.RD com.sixi.api.historyreport.HistoryReportCtrl.moneyAdd()
+2017/08/28-15:08:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/historyreport/historyreport/getmoneyfloat]}" onto public com.sixi.utils.RD com.sixi.api.historyreport.HistoryReportCtrl.getmoneyfloat()
+2017/08/28-15:08:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/historyreport/historyreport/exportExcel]}" onto public void com.sixi.api.historyreport.HistoryReportCtrl.exportExcel(javax.servlet.http.HttpServletResponse)
+2017/08/28-15:08:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sys/logOut]}" onto public com.sixi.utils.RD com.sixi.api.nologin.SysCtrl.logout()
+2017/08/28-15:08:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sys/login]}" onto public com.sixi.utils.RD com.sixi.api.nologin.SysCtrl.login(java.lang.String,java.lang.String)
+2017/08/28-15:08:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017/08/28-15:08:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017/08/28-15:08:48 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017/08/28-15:08:48 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017/08/28-15:08:48 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017/08/28-15:08:48 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017/08/28-15:08:49 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2017/08/28-15:08:49 [main] INFO  o.s.b.a.s.AuthenticationManagerConfiguration - 
+
+Using default security password: 66282c69-3373-4e02-97c6-79594904a3b6
+
+2017/08/28-15:08:49 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017/08/28-15:08:49 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource_cwpg' has been autodetected for JMX exposure
+2017/08/28-15:08:49 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource_oasqlserver' has been autodetected for JMX exposure
+2017/08/28-15:08:49 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource_cwpg': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource_cwpg,type=DruidDataSource]
+2017/08/28-15:08:49 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource_oasqlserver': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource_oasqlserver,type=DruidDataSource]
+2017/08/28-15:08:49 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2017/08/28-15:08:49 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017/08/28-15:08:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+2017/08/28-15:08:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+2017/08/28-15:08:49 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017/08/28-15:08:49 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8086 (http)
+2017/08/28-15:08:49 [main] INFO  com.sixi.App - Started App in 8.181 seconds (JVM running for 9.084)
+2017/08/28-15:14:47 [http-nio-8086-exec-1] INFO  o.a.tomcat.util.http.parser.Cookie - A cookie header was received [1503366243,1503450743,1503471178; JSESSIONID=A9F84FD43778B8E569ADA9868E8653CC; SESSION=71a780a9-7fdb-4c91-b41f-d27f524e8593; sxl=FEB88C2D39D88900C9EFDF7FF693527957B2E95D25EFE60FFE8991B1454BFE27A99458AE5043262C003FAC80DD92ADC8186BCEDC6642FD0145DD1005C66B43125FAAE842EA5FC9304814A3F1295A3BC8459B9FEC525E53B0DFA6D719DADEEB7A93C9B2FCB841A8A8D8E4B79D2753FBE50022EA701CA4B575; ___a2ln=B7D2EF90040DA77B; oa_screen_type=3; PHPSESSID=c2vd18b31sn2lrn7p08dv48mb3; lyh=Qe%2BuTl%2Fu%2Fploa3jYYRNUg6EzA3oiI2DqBADweOPXerl2mBh0dAD4Vy9TdebEYqAODNJrpUg%2Flw9P1zshDK4JB%2FP%2FKzGzlBh6y%2FL0m0A1N3UKrTiKvMqD8babMEu5vebS; ___alnB7D2EF90040DA77B=2017-08-28%2015%3A00%3A45; jumpURL=] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2017/08/28-15:14:47 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017/08/28-15:14:47 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2017/08/28-15:14:47 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 47 ms
+2017/08/28-15:14:47 [http-nio-8086-exec-1] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017/08/28-15:14:51 [http-nio-8086-exec-3] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+2017/08/28-15:14:51 [http-nio-8086-exec-3] INFO  c.sixi.interceptor.DebugInterceptor - --------------------------------------------------------------------------------
+2017/08/28-15:14:51 [http-nio-8086-exec-3] INFO  c.sixi.interceptor.DebugInterceptor - Controller  : com.sixi.api.historyreport.HistoryReportCtrl.(HistoryReportCtrl.java:1)
+2017/08/28-15:14:51 [http-nio-8086-exec-3] INFO  c.sixi.interceptor.DebugInterceptor - Method      : getDetailsList
+2017/08/28-15:14:51 [http-nio-8086-exec-3] INFO  c.sixi.interceptor.DebugInterceptor - Path        : /historyreport/historyreport/details
+2017/08/28-15:14:51 [http-nio-8086-exec-3] INFO  c.sixi.interceptor.DebugInterceptor - Method      : GET
+2017/08/28-15:14:51 [http-nio-8086-exec-3] INFO  c.sixi.interceptor.DebugInterceptor - FunStr      : as
+2017/08/28-15:14:51 [http-nio-8086-exec-3] INFO  c.sixi.interceptor.DebugInterceptor - --------------------------------------------------------------------------------
+2017/08/28-15:14:56 [http-nio-8086-exec-5] INFO  c.sixi.interceptor.DebugInterceptor - --------------------------------------------------------------------------------
+2017/08/28-15:14:56 [http-nio-8086-exec-5] INFO  c.sixi.interceptor.DebugInterceptor - Controller  : com.sixi.api.historyreport.HistoryReportCtrl.(HistoryReportCtrl.java:1)
+2017/08/28-15:14:56 [http-nio-8086-exec-5] INFO  c.sixi.interceptor.DebugInterceptor - Method      : getDirList
+2017/08/28-15:14:56 [http-nio-8086-exec-5] INFO  c.sixi.interceptor.DebugInterceptor - Path        : /historyreport/historyreport/dir
+2017/08/28-15:14:56 [http-nio-8086-exec-5] INFO  c.sixi.interceptor.DebugInterceptor - Method      : GET
+2017/08/28-15:14:56 [http-nio-8086-exec-5] INFO  c.sixi.interceptor.DebugInterceptor - --------------------------------------------------------------------------------
+2017/08/28-15:14:56 [http-nio-8086-exec-8] INFO  c.sixi.interceptor.DebugInterceptor - --------------------------------------------------------------------------------
+2017/08/28-15:14:56 [http-nio-8086-exec-8] INFO  c.sixi.interceptor.DebugInterceptor - Controller  : com.sixi.api.historyreport.HistoryReportCtrl.(HistoryReportCtrl.java:1)
+2017/08/28-15:14:56 [http-nio-8086-exec-8] INFO  c.sixi.interceptor.DebugInterceptor - Method      : getDirList
+2017/08/28-15:14:56 [http-nio-8086-exec-8] INFO  c.sixi.interceptor.DebugInterceptor - Path        : /historyreport/historyreport/dir
+2017/08/28-15:14:56 [http-nio-8086-exec-8] INFO  c.sixi.interceptor.DebugInterceptor - Method      : GET
+2017/08/28-15:14:56 [http-nio-8086-exec-8] INFO  c.sixi.interceptor.DebugInterceptor - --------------------------------------------------------------------------------

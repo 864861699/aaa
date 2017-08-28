@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sixi.domain.dao.oasqlserver.IhistoryreportDao">
+
+        <select id="getGenerate" resultType="java.util.Map" parameterType="com.sixi.domain.dto.historyreport.ReportListParam">
+                select m.id
+                ,isnull(c1.id,0) as class1
+                ,isnull(c1.classname,'') as class1name
+                ,isnull(c2.id,0) as class2
+                ,isnull(c2.classname,'') as class2name
+                ,isnull(tk.id,0) as tkrid
+                ,isnull(tk.username,'') as tkrname
+                ,isnull(n.title,'') as customname
+                ,isnull(n.id,0) as customid
+                ,isnull(h.id,0) as contract_type
+                ,isnull(h.clname,'') as clname
+                ,m.money
+                ,isnull(xkzfz.id,0) as xkzfz_uid
+                ,isnull(xkzfz.username,'') as xkzfz_name
+                ,isnull(kf.id,0) as kfid
+                ,isnull(kf.username,'') as kfname
+                ,isnull(i.id,0) as invoiceid
+                ,isnull(h.numbers,'') as contract_num
+                ,isnull(m.content,'') as remark
+                ,c.startime
+                ,c.endtime
+                ,m.mdate
+                ,i.flow
+                from money m
+                left join contract c on m.hid=c.id
+                left join htclass h on h.id=c.clid
+                left join news n on n.id=c.nid
+                left join manage xkzfz on xkzfz.id=n.xufeiUserID
+                left join manage tk on tk.id=m.uid
+                left join class_1 c1 on tk.admin=c1.id
+                left join class_2 c2 on tk.class2=c2.id
+                left join manage kf on kf.id=n.kfid
+                left join invoice as i on i.hid = c.id and i.flow!=4
+                where  1=1
+                <if test="timetype==0">
+                 <![CDATA[
+                   AND m.AddTime>=#{starttime} AND m.addtime<=#{endtime}
+                ]]>
+                </if>
+        </select>
+
+        <select id="getGenerateId" resultType="java.util.Map">
+                select m.id
+                ,isnull(c1.id,0) as class1
+                ,isnull(c1.classname,'') as class1name
+                ,isnull(c2.id,0) as class2
+                ,isnull(c2.classname,'') as class2name
+                ,isnull(tk.id,0) as tkrid
+                ,isnull(tk.username,'') as tkrname
+                ,isnull(n.title,'') as customname
+                ,isnull(n.id,0) as customid
+                ,isnull(h.id,0) as contract_type
+                ,isnull(h.clname,'') as clname
+                ,m.money
+                ,isnull(xkzfz.id,0) as xkzfz_uid
+                ,isnull(xkzfz.username,'') as xkzfz_name
+                ,isnull(kf.id,0) as kfid
+                ,isnull(kf.username,'') as kfname
+                ,isnull(i.id,0) as invoiceid
+                ,isnull(h.numbers,'') as contract_num
+                ,isnull(m.content,'') as remark
+                ,c.startime
+                ,c.endtime
+                ,m.mdate
+                ,i.flow
+                from money m
+                left join contract c on m.hid=c.id
+                left join htclass h on h.id=c.clid
+                left join news n on n.id=c.nid
+                left join manage xkzfz on xkzfz.id=n.xufeiUserID
+                left join manage tk on tk.id=m.uid
+                left join class_1 c1 on tk.admin=c1.id
+                left join class_2 c2 on tk.class2=c2.id
+                left join manage kf on kf.id=n.kfid
+                left join invoice as i on i.hid = c.id and i.flow!=4
+                where id=#{id}
+        </select>
+
+
+        <select id="getmoneyfloat" resultType="java.util.Map">
+                select top 80 m.id
+                ,n.title as customname
+                ,ht.clname
+                ,m1.username
+                ,m.Money
+                ,c.htdate
+                ,c.startime
+                ,c.endtime
+                from money m
+                left join contract c on c.id=m.hid
+                left join news n on n.id=c.nid
+                left join manage m1 on n.uid=m1.id
+                left join htclass ht on ht.id=c.clid
+                where m.flag=1 and n.title like '%#{keyword}%'
+        </select>
+
+</mapper>
