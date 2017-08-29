@@ -1,14 +1,17 @@
 package com.sixi.config.db;
 
 import com.alibaba.druid.pool.DruidDataSource;
+import com.github.pagehelper.PageHelper;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.mapper.MapperScannerConfigurer;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 import javax.sql.DataSource;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.Properties;
 
 public class DBConfigUtils {
     /**
@@ -104,27 +107,20 @@ public class DBConfigUtils {
         return m;
     }
 
-//	@Bean
-//	@Conditional(EnvCondition.class)
-//	public String conditionBeanTest(){
-//		System.out.println("conditionBeanTest");
-//		return "conditionBeanTest";
-//	}
-
-//	@Bean
-//	public DataSourceTransactionManager dataSourceTransactionManager(DataSource driver){
-//		System.out.println("DataSourceTransactionManager");
-//		DataSourceTransactionManager d = new DataSourceTransactionManager();
-//		d.setDataSource(driver);
-//		return d;
-//	}
-
-//	@Bean
-//	public MapperFactoryBean mapperFactoryBean(SqlSessionFactoryBean sqlSessionFactoryBean) throws Exception{
-//		System.out.println("MapperFactoryBean");
-//		MapperFactoryBean m = new MapperFactoryBean<>(IBook.class);
-//		m.setSqlSessionFactory(sqlSessionFactoryBean.getObject());
-//		return m;
-//	}
-
+    /**
+     * 指定分页数据库
+     * @param pageHelper 数据库类型，可选值为oracle,mysql,mariadb,sqlite,hsqldb,postgresql,db2,sqlserver,informix,h2,sqlserver2012
+     * @return
+     */
+    public static PageHelper pageHelper(String pageHelper){
+        Properties p=new Properties();
+        p.setProperty("dialect",pageHelper);
+        p.setProperty("offsetAsPageNum","true");
+        p.setProperty("rowBoundsWithCount","true");
+        p.setProperty("pageSizeZero","true");
+        p.setProperty("reasonable","false");
+        PageHelper page= new PageHelper();
+        page.setProperties(p);
+        return page;
+    }
 }

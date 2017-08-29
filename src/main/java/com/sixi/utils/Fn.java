@@ -1,5 +1,6 @@
 package com.sixi.utils;
 
+import com.github.pagehelper.Page;
 import org.apache.commons.codec.digest.DigestUtils;
 
 import java.sql.Timestamp;
@@ -266,53 +267,52 @@ public class Fn {
     }
 
 
-    /**
-     * 集合转化分页 2016年9月10日 下午5:57:04
-     *
-     * @param list
-     *            需分页的集合
-     * @param pageIndex
-     *            页码
-     * @param pageSize
-     *            每页记录数
-     * @return 返回Page对象，Page对象的getList()返回结果是经过筛选后的当前pageIndex页的记录
-     */
-    public static <T> Page<T> listToPage(Collection<T> list, int pageIndex, int pageSize) {
-        if (pageIndex <= 0) {
-            pageIndex = 1;
-        }
-        if (pageSize <= 0) {
-            pageSize = 1;
-        }
-
-        int rowTotal = list.size();// 总条数
-        int pageTotal = rowTotal / pageSize;// 总页数
-        int startIndex = (pageIndex - 1) * pageSize;// 所在页码的开始索引
-        int endIndex = startIndex + pageSize;// 所在页码的结束索引
-
-        // 若最后一页不满pageSize条
-        if (rowTotal % pageSize > 0) {
-            pageTotal++;
-        }
-
-        List<T> tmpResult = new ArrayList<>();// 分页后的结果集
-
-        int itIndex = 0;// 迭代器索引
-        Iterator<T> it = list.iterator();
-        while (it.hasNext()) {
-            if (itIndex >= endIndex) {
-                break;// 找完后退出
-            }
-
-            T val = (T) it.next();
-            // 若页码在指的开始索引和结束索引，则加入结果集
-            if (startIndex <= itIndex && itIndex < endIndex) {
-                tmpResult.add(val);
-            }
-            itIndex++;
-        }
-
-        Page<T> result = new Page<>(tmpResult, pageIndex, pageSize, pageTotal, rowTotal);
-        return result;
-    }
+//    /**
+//     * 集合转化分页 2016年9月10日 下午5:57:04
+//     *
+//     * @param list
+//     *            需分页的集合
+//     * @param pageIndex
+//     *            页码
+//     * @param pageSize
+//     *            每页记录数
+//     * @return 返回Page对象，Page对象的getList()返回结果是经过筛选后的当前pageIndex页的记录
+//     */
+//    public static <T> Page<T> listToPage(Collection<T> list, int pageIndex, int pageSize) {
+//        if (pageIndex <= 0) {
+//            pageIndex = 1;
+//        }
+//        if (pageSize <= 0) {
+//            pageSize = 1;
+//        }
+//
+//        int rowTotal = list.size();// 总条数
+//        int pageTotal = rowTotal / pageSize;// 总页数
+//        int startIndex = (pageIndex - 1) * pageSize;// 所在页码的开始索引
+//        int endIndex = startIndex + pageSize;// 所在页码的结束索引
+//
+//        // 若最后一页不满pageSize条
+//        if (rowTotal % pageSize > 0) {
+//            pageTotal++;
+//        }
+//
+//        List<T> tmpResult = new ArrayList<>();// 分页后的结果集
+//
+//        int itIndex = 0;// 迭代器索引
+//        Iterator<T> it = list.iterator();
+//        while (it.hasNext()) {
+//            if (itIndex >= endIndex) {
+//                break;// 找完后退出
+//            }
+//
+//            T val = (T) it.next();
+//            // 若页码在指的开始索引和结束索引，则加入结果集
+//            if (startIndex <= itIndex && itIndex < endIndex) {
+//                tmpResult.add(val);
+//            }
+//            itIndex++;
+//        }
+//        Page<T> result=new Page<>(tmpResult);
+//        return result;
+//    }
 }

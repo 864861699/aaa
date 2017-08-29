@@ -1,5 +1,6 @@
 package com.sixi.config.db;
 
+import com.github.pagehelper.PageHelper;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.mapper.MapperScannerConfigurer;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -23,6 +24,8 @@ public class DBInit_CWPG {
     private final String DataSourceBean="dataSource_cwpg";
     private final String SQLSessionFactoryBean="sqlSessionFactory_cwpg";
     private final String PackageName="com.sixi.domain.dao.cwpg";
+    private final String txStr="cwpg";
+    private final String pageHelper="postgresql";//不要乱写，可选值为oracle,mysql,mariadb,sqlite,hsqldb,postgresql,db2,sqlserver,informix,h2,sqlserver2012
 
     /**
      * 初始数据库
@@ -41,6 +44,7 @@ public class DBInit_CWPG {
      * @param driver
      * @return
      */
+    @Primary
     @Bean(SQLSessionFactoryBean)
     public SqlSessionFactoryBean sqlSessionFactory(@Qualifier(DataSourceBean) DataSource driver){
         System.out.println(SQLSessionFactoryBean);
@@ -58,6 +62,15 @@ public class DBInit_CWPG {
         return DBConfigUtils.getMapperScannerConfigurer(SQLSessionFactoryBean, PackageName);
     }
 
-    @Transactional("cwpg")
-    public void doSomething() { }
+    @Transactional(txStr)
+    public void setTransactional1() { }
+
+    /**
+     * 数据库指定
+     * @return
+     */
+    @Bean(pageHelper+"pageHelper")
+    public PageHelper pageHelper1(){
+        return DBConfigUtils.pageHelper(pageHelper);
+    }
 }

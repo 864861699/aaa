@@ -39,8 +39,8 @@ com\sixi\utils\Fn.class
 com\sixi\interceptor\AuthInterceptor.class
 com\sixi\api\nologin\SysCtrl.class
 com\sixi\service\historyreportSer\Ihistoryreport.class
+com\sixi\api\common\QXCtr.class
 com\sixi\api\historyreport\HistoryReportCtrl.class
 com\sixi\config\WebConfig.class
 test.class
-com\sixi\utils\Page.class
 com\sixi\utils\Session.class

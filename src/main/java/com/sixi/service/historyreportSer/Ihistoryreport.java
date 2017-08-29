@@ -1,7 +1,7 @@
 package com.sixi.service.historyreportSer;
 
+import com.github.pagehelper.PageInfo;
 import com.sixi.domain.dto.historyreport.ReportListParam;
-import com.sixi.utils.Page;
 import com.sixi.domain.cwmodel.ReportDetails;
 import com.sixi.utils.RD;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -24,7 +24,7 @@ public interface Ihistoryreport {
     /**
      *目录接口
      */
-    Page getListDir(int pageIndex, int pageSize);
+    PageInfo getListDir(int pageIndex, int pageSize);
 
     /**
      * 业绩详情接口

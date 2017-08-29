@@ -1,12 +1,14 @@
 package com.sixi.service.historyreportSer.impl;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.sixi.domain.cwmodel.ReportDir;
 import com.sixi.domain.dao.cwpg.IGenerateReport;
 import com.sixi.domain.dao.oasqlserver.IClass1;
 import com.sixi.domain.dao.oasqlserver.IhistoryreportDao;
 import com.sixi.domain.dto.historyreport.ReportListParam;
 import com.sixi.service.historyreportSer.Ihistoryreport;
-import com.sixi.utils.Page;
 import com.sixi.domain.cwmodel.ReportDetails;
 import com.sixi.domain.dao.oasqlserver.IManage;
 import com.sixi.utils.Fn;
@@ -110,10 +112,14 @@ public class historyreport implements Ihistoryreport {
      * @return
      */
     @Override
-    public Page getListDir(int pageIdex, int pageSize) {
-        List<Map<String,Object>> list= iGenerateReport.getDirList();
+    public PageInfo getListDir(int pageIdex, int pageSize) {
+        PageHelper.startPage(1, 5);
+//        PageHelper.offsetPage(1,5);
 
-        return Fn.listToPage(list,1,20);
+        List<Map<String,Object>> list = iGenerateReport.getDirList(pageIdex);
+
+        PageInfo page=new PageInfo(list);
+        return page;
     }
 
     /**
@@ -425,5 +431,4 @@ public class historyreport implements Ihistoryreport {
     public void a() {
 
     }
-
 }

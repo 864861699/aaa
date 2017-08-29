@@ -33,7 +33,7 @@ public interface IGenerateReport {
      * @param param
      * @return
      */
-    List<Map<String,Object>> getDirList();
+    List<Map<String,Object>> getDirList(int pageIndex);
 
     /**
      * 查询目录接口详情
