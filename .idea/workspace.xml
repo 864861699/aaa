@@ -2,21 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="857f16ef-dbf3-4344-b492-f4ecc537aefb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/excel/asd1503403267410.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/excel/asd1503403284128.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/diangjiangla.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/sixi/domain/dto/a.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CWService-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/CWService-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CWService-1.0-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/target/CWService-1.0-SNAPSHOT.jar.original" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sixi/utils/ExcelUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/sixi/utils/ExcelUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sixi/utils/Fn.class" afterPath="$PROJECT_DIR$/target/classes/com/sixi/utils/Fn.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/sixi/service/historyreportSer/Ihistoryreport.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/sixi/service/historyreportSer/impl/historyreport.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sixi/App.class" afterPath="$PROJECT_DIR$/target/classes/com/sixi/App.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sixi/domain/dao/cwpg/IGenerateReport.class" afterPath="$PROJECT_DIR$/target/classes/com/sixi/domain/dao/cwpg/IGenerateReport.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sixi/domain/dao/oasqlserver/IhistoryreportDao.class" afterPath="$PROJECT_DIR$/target/classes/com/sixi/domain/dao/oasqlserver/IhistoryreportDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sixi/App.java" afterPath="$PROJECT_DIR$/src/main/java/com/sixi/App.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/logback.xml" afterPath="$PROJECT_DIR$/target/classes/logback.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/CWService.log" afterPath="$PROJECT_DIR$/logs/CWService.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sixi/api/common/QXCtr.java" afterPath="$PROJECT_DIR$/src/main/java/com/sixi/api/common/QXCtr.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sixi/api/historyreport/HistoryReportCtrl.java" afterPath="$PROJECT_DIR$/src/main/java/com/sixi/api/historyreport/HistoryReportCtrl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sixi/config/db/DBInit_CWPG.java" afterPath="$PROJECT_DIR$/src/main/java/com/sixi/config/db/DBInit_CWPG.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sixi/config/db/DBInit_OASQLServer.java" afterPath="$PROJECT_DIR$/src/main/java/com/sixi/config/db/DBInit_OASQLServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sixi/domain/dao/cwpg/IGenerateReport.java" afterPath="$PROJECT_DIR$/src/main/java/com/sixi/domain/dao/cwpg/IGenerateReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sixi/domain/dao/oasqlserver/IhistoryreportDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/sixi/domain/dao/oasqlserver/IhistoryreportDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sixi/service/historyreportSer/Ihistoryreport.java" afterPath="$PROJECT_DIR$/src/main/java/com/sixi/service/historyreportSer/Ihistoryreport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sixi/service/historyreportSer/impl/historyreport.java" afterPath="$PROJECT_DIR$/src/main/java/com/sixi/service/historyreportSer/impl/historyreport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/sixi/ktpd/mapper/cwpg/GenerateReport.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/sixi/ktpd/mapper/cwpg/GenerateReport.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/sixi/ktpd/mapper/oasqlserver/HistoryreportDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/sixi/ktpd/mapper/oasqlserver/HistoryreportDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sixi/ktpd/mapper/cwpg/GenerateReport.xml" afterPath="$PROJECT_DIR$/target/classes/com/sixi/ktpd/mapper/cwpg/GenerateReport.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sixi/ktpd/mapper/oasqlserver/HistoryreportDao.xml" afterPath="$PROJECT_DIR$/target/classes/com/sixi/ktpd/mapper/oasqlserver/HistoryreportDao.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,83 +46,108 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HistoryReportCtrl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/api/historyreport/HistoryReportCtrl.java">
+      <file leaf-file-name="QXCtr.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/api/common/QXCtr.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="42" column="51" lean-forward="false" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthInterceptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/interceptor/AuthInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="25" column="79" lean-forward="false" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="79" />
+            <state relative-caret-position="289">
+              <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#631#632#0" expanded="true" />
+                <element signature="e#687#688#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SysCtrl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/api/nologin/SysCtrl.java">
+      <file leaf-file-name="DBInit_OASQLServer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/config/db/DBInit_OASQLServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+            <state relative-caret-position="262">
+              <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/App.java">
+      <file leaf-file-name="DBInit_CWPG.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/config/db/DBInit_CWPG.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="447">
+              <caret line="60" column="4" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HistoryReportCtrl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/api/historyreport/HistoryReportCtrl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="469">
+              <caret line="128" column="28" lean-forward="false" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenerateReport.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/sixi/ktpd/mapper/cwpg/GenerateReport.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="382">
+              <caret line="202" column="48" lean-forward="true" selection-start-line="202" selection-start-column="8" selection-end-line="202" selection-end-column="48" />
+              <folding>
+                <marker date="1503907105288" expanded="true" signature="776:1840" ph="INSERT INTO report_details... " />
+                <marker date="1503907105288" expanded="true" signature="1928:1967" ph="select contr... report_details" />
+                <marker date="1503907105288" expanded="true" signature="2047:2236" ph="select id ,a... report_dir" />
+                <marker date="1503907105288" expanded="true" signature="2320:2493" ph="select id ,a... report_dir" />
+                <marker date="1503907105288" expanded="true" signature="2577:3211" ph="select id, c... report_details" />
+                <marker date="1503907105288" expanded="true" signature="3297:3813" ph="select id, c... report_details" />
+                <marker date="1503907105288" expanded="true" signature="3867:3908" ph="delete from " />
+                <marker date="1503907105288" expanded="true" signature="4029:4765" ph="UPDATE repor... " />
+                <marker date="1503907105288" expanded="true" signature="4815:4854" ph="insert into txtest... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IGenerateReport.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/domain/dao/cwpg/IGenerateReport.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413">
+              <caret line="72" column="8" lean-forward="false" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IhistoryreportDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/domain/dao/oasqlserver/IhistoryreportDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HistoryreportDao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/sixi/ktpd/mapper/oasqlserver/HistoryreportDao.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-              <folding />
+              <caret line="6" column="56" lean-forward="false" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
+              <folding>
+                <marker date="1503907327580" expanded="true" signature="273:312" ph="insert into txtest... " />
+                <marker date="1503907327580" expanded="true" signature="2273:3793" ph="select m.id money" />
+                <marker date="1503907327580" expanded="true" signature="3893:4406" ph="select top 8... money" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IUserLogin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/service/common/IUserLogin.java">
+      <file leaf-file-name="historyreport.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/service/historyreportSer/impl/historyreport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExcelUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/utils/ExcelUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Fn.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/utils/Fn.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="25" column="44" lean-forward="false" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DebugInterceptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/interceptor/DebugInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="23" column="98" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="98" />
+            <state relative-caret-position="319">
+              <caret line="417" column="5" lean-forward="true" selection-start-line="417" selection-start-column="5" selection-end-line="417" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -188,11 +217,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/sixi/utils/Session.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sixi/utils/Web.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sixi/aop/LoginVerification11.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sixi/LoginVerification11.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sixi/config/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sixi/start/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sixi/service/impl/UserLogin.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-ehcache.xml.fxml" />
@@ -200,7 +224,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/ehcache.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sixi/service/historyreportSer/impl/historyreport.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sixi/service/common/impl/class1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sixi/service/common/IQXoper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sixi/service/common/impl/QXoper.java" />
@@ -211,7 +234,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sixi/utils/QXHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sixi/domain/vo/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sixi/annotation/Permission.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sixi/api/common/QXCtr.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sixi/config/WebConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sixi/aop/LoginVerification.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sixi/utils/Log.java" />
@@ -225,11 +247,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sixi/domain/dao/cwpg/PrivilegeJointDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/sixi/domain/dao/cwpg/GenerateReport.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/sixi/api/nologin/SysCtrl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sixi/config/db/DBInit_CWPG.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sixi/config/db/DBInit_OASQLServer.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/sixi/ktpd/mapper/oasqlserver/ManageDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/sixi/service/common/impl/QXHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sixi/api/historyreport/HistoryReportCtrl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sixi/config/MvcConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sixi/interceptor/DebugInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sixi/interceptor/PermissionInterceptor.java" />
@@ -239,6 +258,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sixi/utils/RD.java" />
         <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/sixi/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sixi/api/common/QXCtr.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sixi/domain/dao/cwpg/IGenerateReport.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/sixi/ktpd/mapper/cwpg/GenerateReport.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sixi/domain/dao/oasqlserver/IhistoryreportDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/sixi/ktpd/mapper/oasqlserver/HistoryreportDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sixi/service/historyreportSer/Ihistoryreport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sixi/api/historyreport/HistoryReportCtrl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sixi/config/db/DBInit_CWPG.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sixi/service/historyreportSer/impl/historyreport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sixi/config/db/DBInit_OASQLServer.java" />
       </list>
     </option>
   </component>
@@ -264,7 +293,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -408,7 +437,118 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sixi" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CWService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CWService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sixi" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="historyreport" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CWService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CWService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sixi" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CWService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CWService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sixi" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CWService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CWService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sixi" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CWService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CWService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sixi" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="cwmodel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CWService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CWService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sixi" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CWService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CWService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sixi" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="cwpg" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CWService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CWService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sixi" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="oasqlserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CWService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CWService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sixi" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CWService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CWService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sixi" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="historyreportSer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CWService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CWService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sixi" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="historyreportSer" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CWService" type="b2602c69:ProjectViewProjectNode" />
@@ -420,7 +560,72 @@
             <path>
               <item name="CWService" type="b2602c69:ProjectViewProjectNode" />
               <item name="CWService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CWService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CWService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="cwpg" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CWService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CWService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="oasqlserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CWService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CWService" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CWService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="CWService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.15" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="CWService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.15" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-8.5.15.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CWService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.15" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-8.5.15.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CWService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.15" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-8.5.15.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="coyote" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CWService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.15" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-8.5.15.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="coyote" type="462c0819:PsiDirectoryNode" />
+              <item name="http11" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -644,12 +849,12 @@
       <workItem from="1503642603657" duration="15400000" />
       <workItem from="1503709670934" duration="12278000" />
       <workItem from="1503729766893" duration="10133000" />
-      <workItem from="1503882226035" duration="12092000" />
+      <workItem from="1503882226035" duration="18158000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="245208000" />
+    <option name="totallyTimeSpent" value="251274000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -661,23 +866,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32815734" sideWeight="0.49791667" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32721382" sideWeight="0.49791667" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29610115" sideWeight="0.50625" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23855165" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23855165" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35421166" sideWeight="0.49375" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35421166" sideWeight="0.49375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18104367" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2257721" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2428115" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2753623" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
@@ -686,7 +892,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49460045" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33909288" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -709,7 +915,7 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="32" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -718,35 +924,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/api/common/QXCtr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-ehcache.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-test.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/config/db/DBInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -905,22 +1082,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/config/db/DBInit_CWPG.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="71" lean-forward="false" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/config/db/DBInit_OASQLServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="22" column="81" lean-forward="false" selection-start-line="22" selection-start-column="81" selection-end-line="22" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/sixi/ktpd/mapper/Class1Dao.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -957,50 +1118,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/service/historyreportSer/impl/historyreport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/sixi/ktpd/mapper/oasqlserver/HistoryreportDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1503736145772" expanded="true" signature="2168:3688" ph="select m.id money" />
-            <marker date="1503736145772" expanded="true" signature="3788:4301" ph="select top 8... money" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/sixi/ktpd/mapper/cwpg/GenerateReport.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding>
-            <marker date="1503628695782" expanded="true" signature="776:1840" ph="INSERT INTO report_details... " />
-            <marker date="1503628695782" expanded="true" signature="1928:1967" ph="select contr... report_details" />
-            <marker date="1503628695782" expanded="true" signature="2047:2236" ph="select id ,a... report_dir" />
-            <marker date="1503628695782" expanded="true" signature="2320:2493" ph="select id ,a... report_dir" />
-            <marker date="1503628695782" expanded="true" signature="2577:3211" ph="select id, c... report_details" />
-            <marker date="1503628695782" expanded="true" signature="3297:3813" ph="select id, c... report_details" />
-            <marker date="1503628695782" expanded="true" signature="3867:3908" ph="delete from " />
-            <marker date="1503628695782" expanded="true" signature="4029:4765" ph="UPDATE repor... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/domain/dao/cwpg/IGenerateReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/config/MvcConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -1022,7 +1139,7 @@
         <state relative-caret-position="342">
           <caret line="25" column="79" lean-forward="false" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="79" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1047,14 +1164,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/api/historyreport/HistoryReportCtrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="42" column="51" lean-forward="false" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -1152,6 +1261,111 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/domain/dao/cwpg/IGenerateReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="72" column="8" lean-forward="false" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/sixi/ktpd/mapper/cwpg/GenerateReport.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="202" column="48" lean-forward="true" selection-start-line="202" selection-start-column="8" selection-end-line="202" selection-end-column="48" />
+          <folding>
+            <marker date="1503907105288" expanded="true" signature="776:1840" ph="INSERT INTO report_details... " />
+            <marker date="1503907105288" expanded="true" signature="1928:1967" ph="select contr... report_details" />
+            <marker date="1503907105288" expanded="true" signature="2047:2236" ph="select id ,a... report_dir" />
+            <marker date="1503907105288" expanded="true" signature="2320:2493" ph="select id ,a... report_dir" />
+            <marker date="1503907105288" expanded="true" signature="2577:3211" ph="select id, c... report_details" />
+            <marker date="1503907105288" expanded="true" signature="3297:3813" ph="select id, c... report_details" />
+            <marker date="1503907105288" expanded="true" signature="3867:3908" ph="delete from " />
+            <marker date="1503907105288" expanded="true" signature="4029:4765" ph="UPDATE repor... " />
+            <marker date="1503907105288" expanded="true" signature="4815:4854" ph="insert into txtest... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/sixi/ktpd/mapper/oasqlserver/HistoryreportDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="56" lean-forward="false" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
+          <folding>
+            <marker date="1503907327580" expanded="true" signature="273:312" ph="insert into txtest... " />
+            <marker date="1503907327580" expanded="true" signature="2273:3793" ph="select m.id money" />
+            <marker date="1503907327580" expanded="true" signature="3893:4406" ph="select top 8... money" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/domain/dao/oasqlserver/IhistoryreportDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/config/db/DBInit_CWPG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="60" column="4" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/service/historyreportSer/Ihistoryreport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="77" column="7" lean-forward="false" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/api/historyreport/HistoryReportCtrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="128" column="28" lean-forward="false" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.15/tomcat-embed-core-8.5.15.jar!/org/apache/coyote/http11/Http11Processor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="427" column="0" lean-forward="false" selection-start-line="427" selection-start-column="0" selection-end-line="427" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/service/historyreportSer/impl/historyreport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="417" column="5" lean-forward="true" selection-start-line="417" selection-start-column="5" selection-end-line="417" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/api/common/QXCtr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding>
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sixi/config/db/DBInit_OASQLServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
           <folding />
         </state>
       </provider>

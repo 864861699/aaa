@@ -122,4 +122,13 @@ public class HistoryReportCtrl {
         new ExcelUtil().excelExport(salaryDate,response,wb);
     }
 
+    /**
+     * 导出接口
+     * @return
+     */
+    @RequestMapping("/txtest")
+    public RD txtest(){
+
+        return historyreport.txtest();
+    }
 }

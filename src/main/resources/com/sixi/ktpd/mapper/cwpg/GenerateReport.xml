@@ -198,4 +198,9 @@
         , invoice_state=#{invoice_state}
         WHERE id=#{id};
     </update>
+
+    <insert id="cwtest">
+        insert into txtest(name) values ('123');
+    </insert>
+
 </mapper>

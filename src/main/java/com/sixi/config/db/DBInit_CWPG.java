@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.sql.DataSource;
 
@@ -56,4 +57,7 @@ public class DBInit_CWPG {
         System.out.println("MapperScanner_"+SQLSessionFactoryBean);
         return DBConfigUtils.getMapperScannerConfigurer(SQLSessionFactoryBean, PackageName);
     }
+
+    @Transactional("cwpg")
+    public void doSomething() { }
 }

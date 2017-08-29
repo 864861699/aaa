@@ -3,6 +3,9 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.sixi.domain.dao.oasqlserver.IhistoryreportDao">
+        <insert id="sqltest">
+                insert into txtest(name) values ('123');
+        </insert>
 
         <select id="getGenerate" resultType="java.util.Map" parameterType="com.sixi.domain.dto.historyreport.ReportListParam">
                 select m.id

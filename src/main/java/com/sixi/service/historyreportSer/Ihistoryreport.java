@@ -74,4 +74,6 @@ public interface Ihistoryreport {
      * @return
      */
     Map<String,XSSFWorkbook> excelExport(int id);
+
+    RD txtest();
 }

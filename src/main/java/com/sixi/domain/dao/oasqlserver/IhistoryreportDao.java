@@ -29,4 +29,6 @@ public interface IhistoryreportDao {
      * @return
      */
     List<Map<String,Object>> getmoneyfloat(String keyword);
+
+    int sqltest();
 }

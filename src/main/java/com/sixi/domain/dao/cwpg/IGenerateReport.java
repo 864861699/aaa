@@ -69,4 +69,6 @@ public interface IGenerateReport {
      * @return
      */
     int detailsEdit(ReportDetails datailsSaveParam);
+
+    int cwtest();
 }

@@ -5,6 +5,7 @@ import org.mybatis.spring.mapper.MapperScannerConfigurer;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.sql.DataSource;
 
@@ -24,6 +25,7 @@ public class DBInit_OASQLServer {
 	private final String DataSourceBean="dataSource_oasqlserver";
 	private final String SQLSessionFactoryBean="sqlSessionFactory_oasqlserver";
 	private final String PackageName="com.sixi.domain.dao.oasqlserver";
+	private final String txStr="";
 	
 	/**
 	 * 初始数据库
@@ -58,5 +60,9 @@ public class DBInit_OASQLServer {
 		System.out.println("MapperScanner_"+SQLSessionFactoryBean);
 		return DBConfigUtils.getMapperScannerConfigurer(SQLSessionFactoryBean, PackageName);
 	}
-	
+
+	@Transactional("oasqlServer")
+	public void setSomething(String name) {
+
+	}
 }

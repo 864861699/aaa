@@ -407,4 +407,23 @@ public class historyreport implements Ihistoryreport {
     }
 
 
+    @Transactional("cwpg")
+    @Override
+    public RD txtest() {
+        a();
+        b();
+        iGenerateReport.cwtest();
+        Integer.parseInt("asd");
+        return RD.quick(false);
+    }
+
+    @Transactional("oasqlServer")
+    public void b() {
+        ihistoryreportDao.sqltest();
+    }
+
+    public void a() {
+
+    }
+
 }
