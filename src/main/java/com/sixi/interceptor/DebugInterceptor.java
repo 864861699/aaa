@@ -1,7 +1,9 @@
 package com.sixi.interceptor;
 
+import com.alibaba.fastjson.JSON;
 import com.sixi.annotation.Permission;
 import com.sixi.utils.Fn;
+import com.sixi.utils.RD;
 import com.sixi.utils.Session;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.method.HandlerMethod;
@@ -56,10 +58,6 @@ public class DebugInterceptor extends HandlerInterceptorAdapter {
 
             log.info(paramStr);
         }
-        Integer userID = Session.getSession("userid");
-        String userName = Session.getSession("username");
-        int class1 = Session.getSession("class1");
-        int class2 = Session.getSession("class2");
         log.info("--------------------------------------------------------------------------------");
     }
 }

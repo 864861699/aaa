@@ -1,7 +1,7 @@
 package com.sixi.domain.dao.cwpg;
 
-import com.sixi.domain.cwmodel.ReportDetails;
-import com.sixi.domain.cwmodel.ReportDir;
+import com.sixi.domain.model.cwmodel.ReportDetails;
+import com.sixi.domain.model.cwmodel.ReportDir;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -23,6 +23,7 @@ public interface IGenerateReport {
      * @return
      */
     boolean insertReportDeteils(ReportDetails details);
+
     /**
      *合同编号集合
      */

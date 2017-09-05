@@ -5,6 +5,26 @@ public class RD {
     private String msg;
     private Object data;
 
+    private static final int success=200;//服务端操作成功
+    private static final int error=202;//服务端操作失败
+    private static final int errorPath=404;//失败路径
+    private static final int exception=500;//服务端报错
+    private static final int permissions=403;//无访问权限
+    private static final int notlogin=401;//未登录
+    
+    /**
+     * 未登录
+     * @return
+     */
+    public static RD notlogin(){return new RD(notlogin,"未登录","");}
+
+    /**
+     * 报错情况
+     * @param msg
+     * @return
+     */
+    public static RD exception(String msg){return new RD(exception,msg,"");}
+
     /**
      * 获取返回状态的实例
      *
@@ -25,7 +45,7 @@ public class RD {
      * @return
      */
     public static RD error(String msg, Object data) {
-        return new RD(0, msg, data);
+        return new RD(error, msg, data);
     }
 
     /**
@@ -36,7 +56,7 @@ public class RD {
      * @return
      */
     public static RD error(String msg) {
-        return new RD(0, msg, null);
+        return new RD(error, msg, null);
     }
 
     /**
@@ -47,7 +67,7 @@ public class RD {
      * @return
      */
     public static RD success(String msg, Object data) {
-        return new RD(1, msg, data);
+        return new RD(success, msg, data);
     }
 
     /**
@@ -58,7 +78,7 @@ public class RD {
      * @return
      */
     public static RD success(Object data) {
-        return new RD(1, "", data);
+        return new RD(success, "", data);
     }
 
     /**
@@ -69,7 +89,7 @@ public class RD {
      * @return
      */
     public static RD success() {
-        return new RD(1, "", null);
+        return new RD(success, "", null);
     }
 
     /**
@@ -80,9 +100,9 @@ public class RD {
      */
     public static RD quick(boolean b) {
         if (b) {
-            return new RD(1, "", null);
+            return new RD(success, "", null);
         } else {
-            return new RD(0, "失败", null);
+            return new RD(error, "失败", null);
         }
     }
 
@@ -95,9 +115,9 @@ public class RD {
      */
     public static RD quick(boolean b, String errorMsg) {
         if (b) {
-            return new RD(1, "", null);
+            return new RD(success, "", null);
         } else {
-            return new RD(0, errorMsg, null);
+            return new RD(error, errorMsg, null);
         }
     }
 
@@ -108,9 +128,9 @@ public class RD {
      */
     public static RD quick(boolean b, Object successData) {
         if (b) {
-            return new RD(1, "", successData);
+            return new RD(success, "", successData);
         } else {
-            return new RD(0, "失败", null);
+            return new RD(error, "失败", null);
         }
     }
 
@@ -122,9 +142,9 @@ public class RD {
      */
     public static RD quick(boolean b, String errorMsg, Object successData) {
         if (b) {
-            return new RD(1, "", successData);
+            return new RD(success, "", successData);
         } else {
-            return new RD(0, errorMsg, null);
+            return new RD(error, errorMsg, null);
         }
     }
 
@@ -158,7 +178,7 @@ public class RD {
     /**
      * 创建实例
      *
-     * @param state 0：失败 1：成功
+     * @param state
      * @param msg
      * @param data
      */

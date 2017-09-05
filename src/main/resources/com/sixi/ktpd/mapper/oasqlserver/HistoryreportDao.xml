@@ -47,6 +47,24 @@
                    AND m.AddTime>=#{starttime} AND m.addtime<=#{endtime}
                 ]]>
                 </if>
+
+                <if test="keytype>0">
+                        <choose>
+                                <when test="keytype==1">
+                                      and charindex(#{keyword}, n.title )>0
+                                </when>
+                                <when test="keytype==2">
+                                      and c.numbers=#{keyword}
+                                </when>
+                        </choose>
+                </if>
+
+                <if test="class1>0">
+
+                </if>
+
+
+
         </select>
 
         <select id="getGenerateId" resultType="java.util.Map">

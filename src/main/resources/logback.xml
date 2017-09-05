@@ -8,9 +8,9 @@
         </encoder>
     </appender>
     <appender name="GLOBAL_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/CWService.log</file>
+        <file>logs/Fin_API2.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>/logs/CWService-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>/logs/Fin_API2-%d{yyyy-MM-dd}.log</fileNamePattern>
             <maxHistory>30</maxHistory>
         </rollingPolicy>
         <encoder><!-- 必须指定，否则不会往文件输出内容 -->

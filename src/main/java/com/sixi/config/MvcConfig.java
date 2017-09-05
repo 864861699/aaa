@@ -3,7 +3,7 @@ package com.sixi.config;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.alibaba.fastjson.support.config.FastJsonConfig;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
-import com.sixi.interceptor.AuthInterceptor;
+//import com.sixi.interceptor.AuthInterceptor;
 import com.sixi.interceptor.DebugInterceptor;
 import com.sixi.interceptor.PermissionInterceptor;
 import lombok.extern.slf4j.Slf4j;
@@ -45,8 +45,8 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new AuthInterceptor()).excludePathPatterns("/sys/**");
         registry.addInterceptor(new DebugInterceptor()).excludePathPatterns("/sys/**");
+//        registry.addInterceptor(new AuthInterceptor()).excludePathPatterns("/sys/**");
         registry.addInterceptor(permissionInterceptor());
     }
 

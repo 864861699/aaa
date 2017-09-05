@@ -9,4 +9,4 @@ spring:
     port: 16379
     password: sxx.123
   session:
-    store-type: none
+    store-type: redis

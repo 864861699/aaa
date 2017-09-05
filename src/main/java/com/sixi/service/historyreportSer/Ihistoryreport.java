@@ -2,7 +2,7 @@ package com.sixi.service.historyreportSer;
 
 import com.github.pagehelper.PageInfo;
 import com.sixi.domain.dto.historyreport.ReportListParam;
-import com.sixi.domain.cwmodel.ReportDetails;
+import com.sixi.domain.model.cwmodel.ReportDetails;
 import com.sixi.utils.RD;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.stereotype.Service;
@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 
-@Service
+//@Service
 public interface Ihistoryreport {
 
     /**

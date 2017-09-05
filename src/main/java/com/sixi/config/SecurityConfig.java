@@ -15,7 +15,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter  {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.csrf().ignoringAntMatchers("/druid/*");
+        http.csrf().disable();
         http.authorizeRequests()
                 .antMatchers("/homepage/book").permitAll()
                 .antMatchers("/user1/**").hasRole("USER")//.hasAuthority("USER")

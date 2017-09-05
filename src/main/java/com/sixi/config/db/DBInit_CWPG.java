@@ -56,6 +56,7 @@ public class DBInit_CWPG {
      * @return
      * @throws Exception
      */
+    @Primary
     @Bean("MapperScanner_"+SQLSessionFactoryBean)
     public MapperScannerConfigurer mapperScannerConfigurer() throws Exception{
         System.out.println("MapperScanner_"+SQLSessionFactoryBean);
@@ -63,14 +64,14 @@ public class DBInit_CWPG {
     }
 
     @Transactional(txStr)
-    public void setTransactional1() { }
+    public void setTransactional() { }
 
     /**
      * 数据库指定
      * @return
      */
     @Bean(pageHelper+"pageHelper")
-    public PageHelper pageHelper1(){
+    public PageHelper pageHelper(){
         return DBConfigUtils.pageHelper(pageHelper);
     }
 }

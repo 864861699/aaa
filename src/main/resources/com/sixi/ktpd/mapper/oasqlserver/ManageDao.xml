@@ -3,7 +3,7 @@
 		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.sixi.domain.dao.oasqlserver.IManage">
-	<select id="getInfo" resultType="com.sixi.domain.oamodel.Manage">
+	<select id="getInfo" resultType="com.sixi.domain.model.oamodel.Manage">
 		select id,username,pswd,admin,class2,manager from manage
 		where username=#{username} and pswd=#{pswd}
 	</select>

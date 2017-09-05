@@ -13,7 +13,7 @@
     </select>
 
     <insert id="add">
-        INSERT INTO privilege_user(userid,privilege_name) VALUES (#{userid},#{privilegeName})
+        INSERT INTO privilege_user(userid,privilege_name) VALUES (#{userid},#{funStr})
     </insert>
 
     <update id="edit">

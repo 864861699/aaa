@@ -1,10 +1,10 @@
 package com.sixi.service.common.impl;
 
-import com.sixi.domain.cwmodel.PrivilegeJoint;
 import com.sixi.domain.dao.cwpg.IprivilegeJoint;
 import com.sixi.domain.dao.cwpg.IprivilegeUser;
 import com.sixi.domain.dao.oasqlserver.IManage;
-import com.sixi.domain.oamodel.Manage;
+import com.sixi.domain.model.cwmodel.PrivilegeJoint;
+import com.sixi.domain.model.oamodel.Manage;
 import com.sixi.service.common.IQXHelper;
 import com.sixi.utils.Fn;
 import com.sixi.utils.Session;
@@ -54,6 +54,18 @@ public class QXHelper implements IQXHelper {
     @Cacheable(value="userCache")
     public boolean check(String funStr){
         return getcheck(Fn.getLoginUserId(),funStr);
+    }
+
+    /**
+     * 添加人员权限
+     * @param userid 人员名
+     * @param funStr 权限名
+     * @return
+     */
+    @Override
+    public boolean add(int userid, String funStr) {
+        System.out.println(userid);
+        return iprivilegeUser.add(userid,funStr);
     }
 
     /**

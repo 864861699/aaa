@@ -1,9 +1,10 @@
 package com.sixi.domain.dao.cwpg;
 
-import com.sixi.domain.cwmodel.PrivilegeJoint;
+import com.sixi.domain.model.cwmodel.PrivilegeJoint;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+
 
 /**
  * 联合权限

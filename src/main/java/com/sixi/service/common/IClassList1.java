@@ -1,6 +1,6 @@
 package com.sixi.service.common;
 
-import com.sixi.domain.oamodel.Class1;
+import com.sixi.domain.model.oamodel.Class1;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

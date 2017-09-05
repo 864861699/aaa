@@ -15,8 +15,8 @@ public class QXoper implements IQXoper{
     @Autowired
     IprivilegeJoint iprivilegeJoint;
 
-    @Override
-    public boolean add(int userid, String funStr) {
-        return iprivilegeUser.add(userid,funStr);
-    }
+//    @Override
+//    public boolean add(int userid, String funStr) {
+//        return iprivilegeUser.add(userid,funStr);
+//    }
 }

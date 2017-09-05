@@ -1,5 +1,6 @@
 package com.sixi.domain.dao.cwpg;
 
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -23,7 +24,7 @@ public interface IprivilegeUser {
      * @param privilegeName 权限名
      * @return
      */
-    boolean add(int userid,String privilegeName);
+    boolean add(@Param("userid") int userid, @Param("funStr") String funStr);
 
     /**
      * 修改权限

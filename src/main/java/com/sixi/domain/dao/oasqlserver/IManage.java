@@ -1,6 +1,6 @@
 package com.sixi.domain.dao.oasqlserver;
 
-import com.sixi.domain.oamodel.Manage;
+import com.sixi.domain.model.oamodel.Manage;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

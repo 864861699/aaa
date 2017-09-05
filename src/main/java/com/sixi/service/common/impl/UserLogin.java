@@ -1,7 +1,7 @@
 package com.sixi.service.common.impl;
 
 import com.sixi.domain.dao.oasqlserver.IManage;
-import com.sixi.domain.oamodel.Manage;
+import com.sixi.domain.model.oamodel.Manage;
 import com.sixi.service.common.IQXHelper;
 import com.sixi.service.common.IUserLogin;
 import com.sixi.utils.Fn;

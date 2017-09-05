@@ -1,15 +1,14 @@
 package com.sixi.service.historyreportSer.impl;
 
-import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.sixi.domain.cwmodel.ReportDir;
 import com.sixi.domain.dao.cwpg.IGenerateReport;
 import com.sixi.domain.dao.oasqlserver.IClass1;
 import com.sixi.domain.dao.oasqlserver.IhistoryreportDao;
 import com.sixi.domain.dto.historyreport.ReportListParam;
+import com.sixi.domain.model.cwmodel.ReportDetails;
+import com.sixi.domain.model.cwmodel.ReportDir;
 import com.sixi.service.historyreportSer.Ihistoryreport;
-import com.sixi.domain.cwmodel.ReportDetails;
 import com.sixi.domain.dao.oasqlserver.IManage;
 import com.sixi.utils.Fn;
 import com.sixi.utils.RD;
@@ -17,7 +16,6 @@ import org.apache.poi.hssf.usermodel.HSSFFont;
 import org.apache.poi.ss.util.CellRangeAddress;
 import org.apache.poi.xssf.usermodel.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

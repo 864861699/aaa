@@ -1,27 +1,29 @@
 package com.sixi.utils;
 
-import com.github.pagehelper.Page;
 import org.apache.commons.codec.digest.DigestUtils;
 
 import java.sql.Timestamp;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
  * 公用方法
+ *
  * @Author 艾翔
  * @Date 2017/8/28 14:42
  */
 public class Fn {
     private final static Pattern intPaddern = Pattern.compile("^[+-]?[0-9]+$");
+
     /**
      * 判断字符串是否可以转int
      *
-     * @param str
-     *            字符串
+     * @param str 字符串
      * @return
      */
     public static Boolean isInt(String str) {
@@ -106,11 +108,12 @@ public class Fn {
 
     /**
      * 过滤字符串前后空格，支持全角
+     *
      * @param str
      * @return 若为null，返回空字符串
      */
     public static String trim(String str) {
-        if (str==null) {
+        if (str == null) {
             return "";
         }
         //第1个：全角空格 encodeURI('　')=%E3%80%80
@@ -127,65 +130,53 @@ public class Fn {
 
     /**
      * 过滤字符串前后空格，支持全角
+     *
      * @param o
      * @return 若为null，返回空字符串
      */
     public static String trim(Object o) {
-        if (o==null) {
+        if (o == null) {
             return "";
         }
         return trim(o.toString());
     }
 
-    public static String md5(String s){
+    public static String md5(String s) {
         return DigestUtils.md5Hex(s);
     }
 
-    public static String md5_16(String s){
-        return DigestUtils.md5Hex(s).substring(8,24);
+    public static String md5_16(String s) {
+        return DigestUtils.md5Hex(s).substring(8, 24);
     }
 
     /**
      * 获取当前登录人id
+     *
      * @return
      */
-    public static int getLoginUserId(){
-        try {
-            int userid = Session.getSession("userid");
-            if (userid > 0) {
-                return userid;
-            }
-        }catch (Exception e){
-            return 0;
-        }
-
-        return 0;
+    public static Integer getLoginUserId() {
+        Integer userid = Session.getSession("userid");
+        return Fn.toInt(userid);
     }
 
     /**
      * 获取当前登录人一级部门
+     *
      * @return
      */
-    public static int getLoginClass1(){
-        int class1=Session.getSession("class1");
-        if(class1>0){
-            return class1;
-        }
-
-        return 0;
+    public static Integer getLoginClass1() {
+        Integer class1 = Session.getSession("class1");
+        return Fn.toInt(class1);
     }
 
     /**
      * 获取当前登录人二级部门
+     *
      * @return
      */
-    public static int getLoginClass2(){
-        int class2=Session.getSession("class2");
-        if(class2>0){
-            return class2;
-        }
-
-        return 0;
+    public static Integer getLoginClass2() {
+        Integer class2 = Session.getSession("class2");
+        return Fn.toInt(class2);
     }
 
     /**
@@ -224,12 +215,11 @@ public class Fn {
      * 判断字符串是否可以转 指定的时间类型
      *
      * @param strDate
-     * @param dateFormat
-     *            时间格式
+     * @param dateFormat 时间格式
      * @return
      */
     public static Boolean isDateFormat(String strDate, String dateFormat) {
-        if (strDate==null) {
+        if (strDate == null) {
             return false;
         }
 
@@ -245,12 +235,13 @@ public class Fn {
 
     /**
      * 字符串传时间类型带
-     * @param datastr  传入时间字符串 如:2016-01-01,2016-01-01 00:00:00
-     * @return 字符串转时间类型,如果转换成功返回类型为时间类型：2016-01-01 00：00：00，转换失败返回null
+     *
+     * @param datastr 传入时间字符串 如:2016-01-01,2016-01-01 00:00:00
+     * @return 字符串转时间类型, 如果转换成功返回类型为时间类型：2016-01-01 00：00：00，转换失败返回null
      */
-    public static Timestamp toTimestamp(String datastr){
+    public static Timestamp toTimestamp(String datastr) {
         datastr = datastr.length() == 10 ? datastr + " 00:00:00" : datastr;
-        if(!Fn.isDateFormat(datastr, "yyyy-MM-dd HH:mm:ss")){
+        if (!Fn.isDateFormat(datastr, "yyyy-MM-dd HH:mm:ss")) {
             return null;
         }
         return Timestamp.valueOf(datastr);

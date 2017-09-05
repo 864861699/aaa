@@ -48,7 +48,7 @@ public class DBInit_OASQLServer {
      * @return
      */
     @Bean(SQLSessionFactoryBean)
-    public SqlSessionFactoryBean sqlSessionFactory1(@Qualifier(DataSourceBean) DataSource driver) {
+    public SqlSessionFactoryBean sqlSessionFactory(@Qualifier(DataSourceBean) DataSource driver) {
         System.out.println(SQLSessionFactoryBean);
         return DBConfigUtils.getSQLSessionFactory(driver, MapperPath);
     }
@@ -71,7 +71,7 @@ public class DBInit_OASQLServer {
      * @param name
      */
     @Transactional(txStr)
-    public void setTransactional2(String name) {
+    public void setTransactional(String name) {
     }
 
     /**
@@ -80,7 +80,7 @@ public class DBInit_OASQLServer {
      * @return
      */
     @Bean(pageHelper + "pageHelper")
-    public PageHelper pageHelper2() {
+    public PageHelper pageHelper() {
         return DBConfigUtils.pageHelper(pageHelper);
     }
 }

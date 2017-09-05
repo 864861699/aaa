@@ -2,8 +2,8 @@ package com.sixi.api.historyreport;
 
 import com.sixi.annotation.Permission;
 import com.sixi.domain.dto.historyreport.ReportListParam;
+import com.sixi.domain.model.cwmodel.ReportDetails;
 import com.sixi.service.historyreportSer.Ihistoryreport;
-import com.sixi.domain.cwmodel.ReportDetails;
 import com.sixi.utils.ExcelUtil;
 import com.sixi.utils.RD;
 import org.apache.poi.xssf.usermodel.*;

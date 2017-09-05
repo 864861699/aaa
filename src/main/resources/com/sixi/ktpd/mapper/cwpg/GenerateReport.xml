@@ -5,10 +5,10 @@
 <mapper namespace="com.sixi.domain.dao.cwpg.IGenerateReport">
 
 
-    <insert id="insertReportDir" parameterType="com.sixi.domain.cwmodel.ReportDir" useGeneratedKeys="true" >
-        <selectKey keyProperty="id" resultType="java.lang.Integer">
-            select currval('reportdir_id_seq')
-        </selectKey>
+    <insert id="insertReportDir" parameterType="com.sixi.domain.model.cwmodel.ReportDir" useGeneratedKeys="true" keyProperty="id"  >
+        <!--<selectKey keyProperty="id" resultType="java.lang.Integer">-->
+            <!--select currval('reportdir_id_seq')-->
+        <!--</selectKey>-->
         INSERT INTO report_dir(
         addtime
         ,timerange
@@ -22,7 +22,7 @@
     </insert>
 
 
-    <insert id="insertReportDeteils" parameterType="com.sixi.domain.cwmodel.ReportDetails">
+    <insert id="insertReportDeteils" parameterType="com.sixi.domain.model.cwmodel.ReportDetails">
         INSERT INTO report_details(
         custom_name
         ,class2
