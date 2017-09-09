@@ -11,7 +11,13 @@ public class RD {
     private static final int exception=500;//服务端报错
     private static final int permissions=403;//无访问权限
     private static final int notlogin=401;//未登录
-    
+
+    /**
+     * 错误页面
+     * @return
+     */
+    public static RD errorPath(){return new RD(errorPath,"你打开的接口不存在",null);}
+
     /**
      * 未登录
      * @return

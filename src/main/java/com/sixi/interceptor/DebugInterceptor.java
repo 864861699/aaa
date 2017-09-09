@@ -11,9 +11,12 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Enumeration;
 
 /**
- * 日志输入
+ * debug输入
  * @Author 艾翔
  * @Date 2017/8/26 15:27
  */
@@ -22,30 +25,21 @@ public class DebugInterceptor extends HandlerInterceptorAdapter {
 
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
+        StringBuilder sb = (new StringBuilder("\nFin_API2 action report -------- ")).append(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+                .format(new Date())).append(" ------------------------------\n");
 
-        log.info("--------------------------------------------------------------------------------");
         if (handler instanceof HandlerMethod) {
             Class cc = ((HandlerMethod) handler).getMethod().getDeclaringClass();
             StringBuffer str = new StringBuffer().append(cc.getName()).append(".(").append(cc.getSimpleName()).append(".java:1)");
-            log.info("Controller  : "+ str.toString());
-            log.info("Method      : "+((HandlerMethod) handler).getMethod().getName());
+            sb.append("Controller  : ").append(cc.getName()).append(".(").append(cc.getSimpleName()).append(".java:1)");
+            sb.append("\nMethod      : ").append(((HandlerMethod) handler).getMethod().getName()).append("\n");
         }
 
-        log.info("Path        : " + request.getServletPath());
-        log.info("Method      : " + request.getMethod());
-
-        String funStr ="";
-        if (handler != null) {
-            Permission permission = ((HandlerMethod) handler).getMethodAnnotation(Permission.class);
-            if(permission!=null){
-                funStr = permission.value();
-            }
+        String urlPath=request.getServletPath();
+        if (urlPath != null) {
+            sb.append("UrlPara     : ").append(urlPath).append("\n");
         }
-
-        if(funStr.length()>0){
-            log.info("FunStr      : "+funStr);
-        }
-
+        sb.append("method      : ").append(request.getMethod()).append("\n");
 
         String getParam = Fn.toString(request.getQueryString());
         if(getParam.length()>0) {
@@ -56,8 +50,48 @@ public class DebugInterceptor extends HandlerInterceptorAdapter {
                 paramStr += s + "  ";
             }
 
-            log.info(paramStr);
+            sb.append(paramStr);
+            sb.append("\n");
         }
-        log.info("--------------------------------------------------------------------------------");
+
+        sb.append("----------------------------------------------------------------------------------\n");
+        System.out.print(sb.toString());
+
+//        log.info("--------------------------------------------------------------------------------");
+//        if (handler instanceof HandlerMethod) {
+//            Class cc = ((HandlerMethod) handler).getMethod().getDeclaringClass();
+//            StringBuffer str = new StringBuffer().append(cc.getName()).append(".(").append(cc.getSimpleName()).append(".java:1)");
+//            log.info("Controller  : "+ str.toString());
+//            log.info("Method      : "+((HandlerMethod) handler).getMethod().getName());
+//        }
+//        String urlPath=request.getServletPath();
+//        log.info("Path        : " + urlPath);
+//        log.info("Method      : " + request.getMethod());
+//
+//        String funStr ="";
+//        if (handler != null) {
+//            Permission permission = ((HandlerMethod) handler).getMethodAnnotation(Permission.class);
+//            if(permission!=null){
+//                funStr = permission.value();
+//            }
+//        }
+//
+//        if(funStr.length()>0){
+//            log.info("FunStr      : "+funStr);
+//        }
+//
+//
+//        String getParam = Fn.toString(request.getQueryString());
+//        if(getParam.length()>0) {
+//            String[] getParamArr = getParam.split("&");
+//            String paramStr = "Param       : ";
+//
+//            for (String s : getParamArr) {
+//                paramStr += s + "  ";
+//            }
+//
+//            log.info(paramStr);
+//        }
+//        log.info("--------------------------------------------------------------------------------");
     }
 }
